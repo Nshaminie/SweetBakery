@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Treats Bakery</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery Mobile js-->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!--  js-->
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+    <!-- Header -->
+    <div data-role="header" data-theme="b">
+        <h1>Sweet Treats Bakery</h1>
+    </div>
+    <!-- Navigation -->
+   <div data-role="navbar">
+        <ul>
+            <li>
+                <a href="#home" class="ui-btn-active" data-icon="home"> Home </a>
+            </li>
+            <li>
+                <a href="#products" data-icon="shop"> Products </a>
+            </li>
+            <li>
+                <a href="#contact" data-icon="phone">Contact </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- Content -->
+    <div data-role="content">
+
+        <h2>Welcome to Our Bakery!</h2>
+
+        <p>We offer freshly baked cakes, pastries, and breads made with love every day.</p>
+
+        <h3>Featured Items</h3>
+
+        <!-- Card Grid -->
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="img/cupcake.jpg" alt="Mini Cupcakes">
+                <h3>Mini Cupcakes</h3>
+                <p>Perfect bite-sized treats with colorful frosting and sprinkles.</p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="img/artisanbread.jpg" alt="Artisan Bread">
+                <h3>Artisan Bread</h3>
+                <p>Handcrafted crusty bread baked fresh every morning.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="img/cookies.jpg" alt="Chocolate Cookies">
+                <h3>Chocolate Cookies</h3>
+                <p> Delicious soft cookies filled with chocolate chips.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+
+                <img src="img/cake.jpg" alt="Chocolate Cake">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>Rich and moist chocolate cake with creamy frosting.</p>
+
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="img/croissant.jpg" alt="Butter Croissant">
+                <h3>Butter Croissant</h3>
+                <p> Golden, flaky layers with a soft buttery center.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+
+                <img src="img/VanillaCupcakes.webp" alt="Vanilla Cupcake">
+
+                <h3>Vanilla Cupcake</h3>
+
+                <p> Soft vanilla cake topped with delicious buttercream icing. </p>
+         </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-theme="b">
+        <h4 class="footer-text"> © 2026 Sweet Treats Bakery</h4>
+    </div>
+
+</div>
+<!-- PRODUCTS PAGE -->
+<div data-role="page" id="products">
+    <!-- Header -->
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext"></a>
+        <h1>Our Products</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a href="#home"  data-icon="home"> Home </a>
+            </li>
+            <li>
+                <a href="#products" class="ui-btn-active" data-icon="shop"> Products </a>
+            </li>
+            <li>
+                <a href="#contact" data-icon="phone">Contact </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- Product Content -->
+    <div role="main" class="ui-content">
+
+        <h2>Our Delicious Products</h2>
+        <p>
+            Click on any product below to view more details.
+        </p>
+
+
+        <!-- Product List -->
+        <ul data-role="listview" data-inset="true" class="product-list">
+            <!-- Chocolate Cake -->
+            <li>
+
+                <a href="#"
+                   class="product-item">
+
+                    <img src="img/cake.jpg" alt="Chocolate Cake">
+
+                    <h2 class="product-name"> Chocolate Cake </h2>
+
+                    <p class="product-description"> Rich and moist chocolate sponge topped with creamy chocolate frosting.</p>
+
+                </a>
+
+            </li>
+            <!-- Butter Croissant -->
+            <li>
+
+                <a href="#" class="product-item">
+
+                    <img src="img/croissant.jpg" alt="Butter Croissant">
+
+                    <h2 class="product-name">
+                        Butter Croissant
+                    </h2>
+
+                    <p class="product-description">
+                        Golden, flaky layers with a soft
+                        buttery center.
+                    </p>
+                </a>
+            </li>
+
+            <!-- Vanilla Cupcake -->
+            <li>
+
+                <a href="#"
+                   class="product-item">
+
+                    <img src="img/cupcake.jpg" alt="Vanilla Cupcake">
+
+                    <h2 class="product-name"> Vanilla Cupcake </h2>
+
+                    <p class="product-description">
+                        Soft vanilla cake topped with
+                        pink buttercream icing.
+                    </p>
+                </a>
+            </li>
+
+            <!-- Chocolate Cookies -->
+            <li>
+                <a href="#" class="product-item">
+
+                    <img src="img/cookies.jpg" alt="Chocolate Cookies">
+
+                    <h2 class="product-name"> Chocolate Cookies </h2>
+
+                    <p class="product-description">
+                        Soft and chewy cookies loaded
+                        with delicious chocolate chips.
+                    </p>
+                </a>
+            </li>
+
+            <!-- Artisan Bread -->
+            <li>
+                <a href="#" class="product-item">
+                    <img src="img/pastry.jpg" alt="Artisan Bread">
+                    <h2 class="product-name">Artisan Bread</h2>
+                    <p class="product-description">
+                        Handcrafted crusty bread baked
+                        fresh every morning.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-theme="b">
+
+        <h4 class="footer-text">
+            © 2026 Sweet Treats Bakery
+        </h4>
+
+    </div>
+
+</div>
+
+<!--  CONTACT PAGE -->
+
+<div data-role="page" id="contact">
+    <!-- Header -->
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext">
+        </a>
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- Navigation -->
+     <div data-role="navbar">
+        <ul>
+            <li>
+                <a href="#home"  data-icon="home"> Home </a>
+            </li>
+            <li>
+                <a href="#products" class="ui-btn-active" data-icon="shop"> Products </a>
+            </li>
+            <li>
+                <a href="#contact" data-icon="phone">Contact </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- Contact Content -->
+    <div data-role="content">
+
+        <h2>Get in Touch</h2>
+
+        <p> We'd love to hear from you! Please fill out the form below.
+        </p>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <!-- Name -->
+            <label for="name"> Name: </label>
+
+            <input type="text"  name="name" id="name" placeholder="Your Name">
+            <!-- Email -->
+            <label for="email"> Email: </label>
+
+            <input type="email"name="email"id="email"placeholder="you@example.com">
+            <!-- Message -->
+            <label for="message">Message: </label>
+
+            <textarea name="message"id="message" placeholder="Type your message here..."> </textarea>
+            <!-- Submit -->
+            <input type="submit" value="Send Message"data-theme="b">
+        </form>
+
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-theme="b">
+
+        <h4 class="footer-text">
+            © 2026 Sweet Treats Bakery
+        </h4>
+    </div>
+</div>
+
+</body>
+</html>
